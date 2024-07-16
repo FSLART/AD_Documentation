@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"4f50f0541ff491b4","type":"file","file":"LART/3. Mapper/Architecture/Camera.canvas","x":-1220,"y":-760,"width":400,"height":400},
+		{"id":"bba288ca80ca9e9a","type":"text","text":"Inference thread loop","x":-740,"y":-590,"width":250,"height":60,"color":"6"},
+		{"id":"206a6706d5d92fac","type":"file","file":"LART/3. Mapper/Architecture/ConeDetector.canvas","x":-400,"y":-760,"width":400,"height":400},
+		{"id":"9526d23bcbb4f4f2","type":"file","file":"LART/3. Mapper/Architecture/Reconstruction.canvas","x":100,"y":-760,"width":400,"height":400},
+		{"id":"2ca81c2b148f10d5","type":"text","text":"Fill cone messages","x":660,"y":-680,"width":250,"height":60,"color":"5"},
+		{"id":"10863ff71f0b1ae7","type":"text","text":"Fill marker messages","x":660,"y":-500,"width":250,"height":60,"color":"5"},
+		{"id":"5ddaf0382217928d","type":"text","text":"Publish cone array","x":980,"y":-680,"width":250,"height":60,"color":"5"},
+		{"id":"dfa8a3fffb27c3f2","type":"text","text":"Publish marker messages","x":980,"y":-500,"width":250,"height":60,"color":"5"}
+	],
+	"edges":[
+		{"id":"0a86c3e6dc3a5b7a","fromNode":"206a6706d5d92fac","fromSide":"right","toNode":"9526d23bcbb4f4f2","toSide":"left"},
+		{"id":"6829ab17578f656f","fromNode":"4f50f0541ff491b4","fromSide":"right","toNode":"bba288ca80ca9e9a","toSide":"left"},
+		{"id":"5816efc822cf2eb4","fromNode":"bba288ca80ca9e9a","fromSide":"right","toNode":"206a6706d5d92fac","toSide":"left"},
+		{"id":"27a13d9fa72b6511","fromNode":"9526d23bcbb4f4f2","fromSide":"right","toNode":"2ca81c2b148f10d5","toSide":"left"},
+		{"id":"3d380301db772051","fromNode":"9526d23bcbb4f4f2","fromSide":"right","toNode":"10863ff71f0b1ae7","toSide":"left"},
+		{"id":"8bc842218bd68352","fromNode":"2ca81c2b148f10d5","fromSide":"right","toNode":"5ddaf0382217928d","toSide":"left"},
+		{"id":"b31bb596c2ad8bc9","fromNode":"10863ff71f0b1ae7","fromSide":"right","toNode":"dfa8a3fffb27c3f2","toSide":"left"}
+	]
+}

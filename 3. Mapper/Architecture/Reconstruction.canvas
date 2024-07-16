@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"f9fdd1235f796015","type":"text","text":"Get bounding box center pixel (u,v)","x":-600,"y":-160,"width":240,"height":60,"color":"5"},
+		{"id":"2f8f1ab53788ada7","x":-300,"y":-160,"width":250,"height":60,"color":"5","type":"text","text":"Get pixel depth value d(u,v)"},
+		{"id":"38dcf2a7b6912b9a","type":"text","text":"Reconstruct pixel to point (x,y,z)","x":0,"y":-160,"width":250,"height":60,"color":"5"}
+	],
+	"edges":[
+		{"id":"4a2c41c0597e9704","fromNode":"f9fdd1235f796015","fromSide":"right","toNode":"2f8f1ab53788ada7","toSide":"left"},
+		{"id":"c1a2b68cd1da8e92","fromNode":"2f8f1ab53788ada7","fromSide":"right","toNode":"38dcf2a7b6912b9a","toSide":"left"}
+	]
+}

@@ -20,5 +20,7 @@ An overall diagram can be visible [here](./Architecture/Mapper.canvas).
 The formulas to calculate the 3-dimensional $x,y,z$ coordinates from the $u.v$ image coordinates and intrinsic parameters $f_x, f_y, c_x, c_y$ are described below.
 
 $$z = \frac{v}{\sqrt{1+\left(\frac{c_x-u}{f_x} \right)^2+\left(\frac{c_y-v}{f_y}\right)^2}}$$
+
 $$x = \frac{c_x-u}{f_x} \cdot z$$
+
 $$y = \frac{c_y-v}{f_y} \cdot z$$

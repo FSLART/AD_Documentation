@@ -1,8 +1,8 @@
 {
 	"nodes":[
-		{"id":"c20e88dd38e43e5d","type":"file","file":"LART/2. ZED Bridge/Architecture/ZED Bridge.canvas","x":-1400,"y":-320,"width":400,"height":400},
+		{"id":"c20e88dd38e43e5d","type":"file","file":"LART/ZED Bridge/Architecture/ZED Bridge.canvas","x":-1400,"y":-320,"width":400,"height":400},
 		{"id":"945730b47c126563","type":"text","text":"StereoLabs ZED 2i","x":-1700,"y":-150,"width":210,"height":60,"color":"3"},
-		{"id":"eeb25a34a1d2bcca","type":"file","file":"LART/3. Mapper/Architecture/Mapper.canvas","x":-900,"y":-320,"width":400,"height":400}
+		{"id":"eeb25a34a1d2bcca","type":"file","file":"LART/Mapper/Architecture/Mapper.canvas","x":-900,"y":-320,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"c3f8486b3d8b1297","fromNode":"c20e88dd38e43e5d","fromSide":"right","toNode":"eeb25a34a1d2bcca","toSide":"left"},

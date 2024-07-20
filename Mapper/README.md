@@ -24,3 +24,11 @@ $$z = \frac{v}{\sqrt{1+\left(\frac{c_x-u}{f_x} \right)^2+\left(\frac{c_y-v}{f_y}
 $$x = \frac{c_x-u}{f_x} \cdot z$$
 
 $$y = \frac{c_y-v}{f_y} \cdot z$$
+## Implementation Details
+### Pre-processing
+The only pre-processing used is converting the color space, in this case from BGR to RGB, and resizing the image to inference size. The inference size is the sized used for all images during training. The inference size used is 640x640 pixels.
+Pre-processing was performed using OpenCV and Numpy.
+### Inference
+Inference is performed using the ONNX runtime.
+ONNX was adopted because the industry is willing to adopt that format as the standard, allowing interoperability.
+This software package, the mapper, was developed in Python and not C++, in contrast to the majority of the rest of the software. The main reason is that, at the time, the ONNX runtime C++ version does not support CUDA or TensorRT acceleration on ARM64 devices, of which the NVIDIA Jetson is an example.

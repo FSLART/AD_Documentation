@@ -1,11 +1,19 @@
 {
 	"nodes":[
 		{"id":"c20e88dd38e43e5d","type":"file","file":"LART/ZED Bridge/Architecture/ZED Bridge.canvas","x":-1400,"y":-320,"width":400,"height":400},
-		{"id":"945730b47c126563","type":"text","text":"StereoLabs ZED 2i","x":-1700,"y":-150,"width":210,"height":60,"color":"3"},
-		{"id":"eeb25a34a1d2bcca","type":"file","file":"LART/Mapper/Architecture/Mapper.canvas","x":-900,"y":-320,"width":400,"height":400}
+		{"id":"945730b47c126563","type":"text","text":"StereoLabs ZED 2i","x":-1805,"y":-320,"width":210,"height":60,"color":"3"},
+		{"id":"6247dd7f3942a017","type":"text","text":"Autonomous Control Unit","x":-1830,"y":20,"width":260,"height":60,"color":"3"},
+		{"id":"eeb25a34a1d2bcca","type":"file","file":"LART/Mapper/Architecture/Mapper.canvas","x":-920,"y":-320,"width":400,"height":400},
+		{"id":"8d25a90adf592cee","type":"file","file":"LART/Planner/Architecture/Planner.canvas","x":-440,"y":-320,"width":400,"height":400},
+		{"id":"78d95de338bba9de","x":40,"y":-320,"width":400,"height":400,"type":"file","file":"LART/Control/Architecture/Control.canvas"},
+		{"id":"a7a98adf114364b4","type":"text","text":"Autonomous Control Unit","x":520,"y":-150,"width":260,"height":60,"color":"3"}
 	],
 	"edges":[
 		{"id":"c3f8486b3d8b1297","fromNode":"c20e88dd38e43e5d","fromSide":"right","toNode":"eeb25a34a1d2bcca","toSide":"left"},
-		{"id":"ac07463d372fdebf","fromNode":"945730b47c126563","fromSide":"right","toNode":"c20e88dd38e43e5d","toSide":"left"}
+		{"id":"ac07463d372fdebf","fromNode":"945730b47c126563","fromSide":"right","toNode":"c20e88dd38e43e5d","toSide":"left"},
+		{"id":"60caf383f07220a6","fromNode":"eeb25a34a1d2bcca","fromSide":"right","toNode":"8d25a90adf592cee","toSide":"left"},
+		{"id":"ec98441bebf32a93","fromNode":"8d25a90adf592cee","fromSide":"right","toNode":"78d95de338bba9de","toSide":"left"},
+		{"id":"9d23613335cb16bd","fromNode":"6247dd7f3942a017","fromSide":"right","toNode":"c20e88dd38e43e5d","toSide":"left"},
+		{"id":"cd88bc76260a3eff","fromNode":"78d95de338bba9de","fromSide":"right","toNode":"a7a98adf114364b4","toSide":"left"}
 	]
 }
